@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: "Open Sans";
     src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
@@ -23,7 +30,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
@@ -37,15 +45,23 @@ body{
 
 .nav{
     width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
 .header-logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -56,15 +72,13 @@ body{
     margin: 7px 0 0 16px;
 }
 
-.header-logo-text:hover{
-    color: #DE2E54;
-}
-
-.header-logo-text:active{
+.header-logo:active{
     opacity: 0.5;
 }
 
 .nav_ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-family: "Open Sans";
@@ -74,16 +88,24 @@ body{
     margin-right: 32px;
     font-weight: 700;
     font-size: 14px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
-.nav_ul li:hover{
+.nav-link:hover{
     color: #DE2E54;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
-.nav_ul li:active{
+.nav-link:active{
     opacity: 0.5;
+}
+
+.nav-link{
+    text-decoration: none;
 }
 
 .nav_btn{
@@ -95,6 +117,8 @@ body{
     border-radius: 8px;
     font-weight: 700;
     font-size: 15px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
@@ -102,6 +126,8 @@ body{
     background-color: transparent;
     border: 2px solid #DE2E54;
     color: #DE2E54;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
@@ -118,9 +144,15 @@ body{
 
 .banner{
     width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -161,8 +193,12 @@ body{
 .service_ul li{
     width: 864px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 60px;
 }
 
@@ -188,10 +224,21 @@ body{
     width: 600px;
 }
 
+.call-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 120px;
+}
+
 .service_btn{
     display: inline-block;
-    margin-left: 350px;
-    margin-bottom: 100px;
     padding: 12px 24px;
     background-color:#DE2E54;
     color: #fff;
@@ -200,6 +247,8 @@ body{
     border-radius: 8px;
     font-weight: 700;
     font-size: 15px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
@@ -216,8 +265,12 @@ body{
 }
 
 .register_ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 40px;
     padding-bottom: 64px;
     margin: 0;
@@ -226,9 +279,15 @@ body{
 .register_ul li{
     width: 194px;
     height: 42px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 55px;
     background-color: transparent;
     border: 2px solid #fff;
@@ -262,13 +321,21 @@ body{
 
 .footer{
     width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
 }
 
 .footer-logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -285,6 +352,15 @@ body{
 
 .footer-logo-text:active{
     opacity: 0.5;
+}
+
+.footer-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: #DE2E54;
 }
 
 
